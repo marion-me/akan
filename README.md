@@ -1,5 +1,5 @@
 # Akan Naming System
-####  {2020}
+####  2020
 #### By Marion
 ## Description
 This application helps to calculate the day of the week of a person and displays the akan name (ghanan name). It displays the name based on the gender of the person and the day rank in week of birth. 
