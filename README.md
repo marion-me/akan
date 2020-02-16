@@ -12,6 +12,8 @@ This application helps to calculate the day of the week of a person and displays
 * open link
 ## Known Bugs
 No known bugs
+## link
+ https://marionvutagwa.github.io/akan/.
 # BDD
 THe application handles name giving system to people of a specific gender born on a specific day.
 ## Technologies Used
