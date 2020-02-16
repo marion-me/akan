@@ -27,15 +27,63 @@ if (day === 0) {
   } else if (day === 4) {
      return "Saturday";
   }
-  var month = if (month <0, >12) {
-      return "invalid month";
+  var month = <=12
+  var day = <=31
   }
-  var day = if (day <0, day >31) {
-      return "invalid day";
+  // validation functions
+  function monthValidator () {
+    if (monthOfBirth > 1 || monthOfBirth < 12) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function dayValidator () {
+    if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
+      if (dayOfBirth < 28 || dayOfBirth > 1) {
+        return true;
+      } else if (monthOfBirth === 2 && dayOfBirth > 29) {
+        return false;
+      } else if (monthOfBirth === 2 && dayOfBirth < 1) {
+        return false;
+      } else {
+        return true;
+      }
+    } else if (dayOfBirth < 1 || dayOfBirth > 31){
+      return false;
+    } else {
+      return true;
+    }
+  }
   }   
-Array.toString[Option(male{"kwasi", "kwadwo", "kwabena", "kwaky", "yaw", "kofi", "kwame"})]
 
+  var genders = document.getElementsByName("gender");
 
+ //creating arrays of Akan names for males and females
+var maleAkanNames = [
+    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"
+  ];
+
+var femaleAkanNames = [
+    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+  ]; 
+  var month = 
+
+  if (myGenderValue == "male" && monthValid && dayValid) {
+    document.getElementById('result')
+    document.getElementById('display-name')
+    document.getElementById('result')
+    return true;
+  } else if (myGenderValue == "female" && monthValid && dayValid) {
+    document.getElementById('result')
+    document.getElementById('display-name')
+    document.getElementById('result')
+    return true;
+  } else {
+    alert("You entered an invalid day or month, please try again");
+  }
+}
 
 
  
