@@ -1,8 +1,10 @@
 var day = d
-ar modulus = function (d) = (((CC / 4) - 2 * cc - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) modulus 7 {
-    return (((cc / 4) - 2 * cc - 1) + ((5 * yy / 4) + ((26 * (mm + 1)/10 +dd) %7
+ar modulus = function (d) = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) modulus 7 {
+    return (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) %7
 }
-function d ()
+function d ((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD), 7) {
+    Return (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) % 7)
+}
 var date = document.getElementById("date").value;
 var month = document.getElementById("month").value;
 var year = document.getElementById("year").value;
@@ -24,7 +26,14 @@ if (day === 0) {
      return "Friday";
   } else if (day === 4) {
      return "Saturday";
-  
+  }
+  var month = if (month <0, >12) {
+      return "invalid month";
+  }
+  var day = if (day <0, day >31) {
+      return "invalid day";
+  }   
+Array.toString[Option(male{"kwasi", "kwadwo", "kwabena", "kwaky", "yaw", "kofi", "kwame"})]
 
 
 
