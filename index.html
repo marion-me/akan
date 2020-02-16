@@ -8,43 +8,44 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <div class>
             <div class="container">
-        <h1>Akan Naming system</h1>
-        <img class="images" src="images/akan.jpeg"></image>
-        <p>In ghana children are named according to the day they are born. Each gender and day has its own name for children.</p>
-        <p>This system helps uniquely identify children from different gender base and day of birth. It also helps peer mates find thier birth mates.</p>
-        <form class="myform" onsubmit="retun getAkanName()">
-            <lable for=centuary-of-birth>
-                centuary:
-                <input id="centuary-input" type="number" name="centuary-of-birth" placeholder="CC" value=""required>
-            </lable>
-            <lable for="year-of-birth"></lable>
-                year:
-                <input id=year-input type="number" name="year-of-birth" placeholder="YYYY" value=""required>
-            </lable>
-            <lable for="month-of-birth">
-                month:
-                <input id="month-input" type="number" name="month of birth" placeholder="MM" value=""required>
-            </lable>
-            <lable for="date-of-birth">
-                date:
-                <input id="date-input" type="number" name="date-of-birth" placeholder="DD" value=""required>
-            </lable>
-            <br>
-            <label for="gender">
+                <h1>Akan Naming system</h1>
+
+                <img class="images" src="images/akan.jpeg"></image>
+                <div class="test box">This application helps determine the day aa person was born and then gives the person a ghanan name.
+                In ghana children are named according to the day they are born. Each gender and day has its own name for children.
+                This system helps uniquely identify children from different gender base and day of birth. It also helps peer mates find thier birth mates.</div>
+                <form class="myform" onsubmit="retun getAkanName()">
+                    <lable for=centuary-of-birth>
+                    centuary:
+                    <input id="centuary-input" type="number" name="centuary-of-birth" placeholder="CC" value=""required>
+                    </lable>
+                    <lable for="year-of-birth"></lable>
+                    year:
+                    <input id=year-input type="number" name="year-of-birth" placeholder="YYYY" value=""required>
+                    </lable>
+                    <lable for="month-of-birth">
+                    month:
+                    <input id="month-input" type="number" name="month of birth" placeholder="MM" value=""required>
+                    </lable>
+                    <lable for="date-of-birth">
+                    date:
+                    <input id="date-input" type="number" name="date-of-birth" placeholder="DD" value=""required>
+                    </lable>
+                <br>
+                    <label for="gender">
                 <p>Select your gender: </p>
-                Male
-                <input id="male-input" type="radio" name="gender" value="male" required>
-                Female
-                <input id="female-input" type="radio" name="gender" value="female" required>
+                    Male:
+                    <input id="male-input" type="radio" name="gender" value="male" required>
+                    Female:
+                    <input id="female-input" type="radio" name="gender" value="female" required>
     
-              </label>
-              <br><br>
-                <input id="get-name" type="submit" name="" value="Generate name">
-              <br><br>
-        </form>
-        <link href="js/scripts.js" type="text/js">
-            </div>
-        </form>    
+                    </label>
+                <br>
+                    <input id="get-name" type="submit" name="" value="Generate name">
+                <br>
+                </form>
+                    <link href="js/scripts.js" type="text/js">
+            </div>    
                 <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
                 <p id="result"></p>   
         </div>

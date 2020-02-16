@@ -8,3 +8,12 @@ p {color: chocolate; font-style: oblique; font-size: x-large;}
 .column{width: 220px; float: left; padding: 15px;}
 .images{width: 350px;}
 body {background-color: cornsilk;}
+.test-box {
+    border: 2px solid red;
+  }
+  .test-box {
+    border-left: 2px solid red;
+    border-right: 4px solid blue;
+    border-top: 6px solid orange;
+    border-bottom: 8px solid black;
+  }
