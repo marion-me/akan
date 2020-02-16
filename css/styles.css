@@ -1,3 +1,10 @@
 h1 {color: darkblue;}
 form {background-color: cornsilk;}
 p {color: chocolate; font-style: oblique; font-size: x-large;}
+@media (min-width: 40px) and (max-width:767px) {
+    body{background-color: black; color: white;}
+}
+@media screen and (min-width: 768px) {
+.column{width: 220px; float: left; padding: 15px;}
+.images{width: 350px;}
+body {background-color: cornsilk;}
