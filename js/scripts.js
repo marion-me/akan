@@ -86,9 +86,6 @@ var femaleAkanNames = [
   }
 }
 
-if (myGenderValue =="male" && monthValid && dayValid)
-switch (dayOfWeek)
-
 
  
 
