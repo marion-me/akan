@@ -9,8 +9,7 @@ d.setDate(parseInt(date));
 d.setMonth(parseInt(month));
 d.setYear(parseInt(year));
 var day = d.getDay();
-
-let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 if (day === 0) {
     return "Sunday";
