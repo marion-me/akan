@@ -1,17 +1,17 @@
 var day = d
-ar modulus = function (d) = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) modulus 7 {
-    return (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) %7
-}
-function d ((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD), 7) {
-    Return (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4) + ((26 * (MM + 1)/10 +DD) % 7)
-}
+
+function result{
 var date = document.getElementById("date").value;
 var month = document.getElementById("month").value;
 var year = document.getElementById("year").value;
+}
 d.setDate(parseInt(date));
 d.setMonth(parseInt(month));
 d.setYear(parseInt(year));
 var day = d.getDay();
+
+let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 if (day === 0) {
     return "Sunday";
   } else if (day === 1) {
@@ -66,24 +66,29 @@ var maleAkanNames = [
   ];
 
 var femaleAkanNames = [
-    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+    "Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afua", "Ama"
   ]; 
-  var month = 
+  var month = document.getElementById("month")
 
   if (myGenderValue == "male" && monthValid && dayValid) {
-    document.getElementById('result')
-    document.getElementById('display-name')
-    document.getElementById('result')
+    document.getElementById('result').textContent="You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
+    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('result').style.fontSize = "18px";
+    document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index]
     return true;
   } else if (myGenderValue == "female" && monthValid && dayValid) {
-    document.getElementById('result')
-    document.getElementById('display-name')
-    document.getElementById('result')
+    document.getElementById('result').textContent="You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
+    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('result').style.fontSize = "18px";
+    document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index]
     return true;
   } else {
-    alert("You entered an invalid day or month, please try again");
+    alert("invalid day or month, please try again");
   }
 }
+
+if (myGenderValue =="male" && monthValid && dayValid)
+switch (dayOfWeek)
 
 
  
