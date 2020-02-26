@@ -1,19 +1,51 @@
-h1 {color: darkblue;}
-form {background-color: cornsilk;}
-p {color: chocolate; font-style: oblique; font-size: x-large;}
-@media (min-width: 40px) and (max-width:767px) {
-    body{background-color: black; color: white;}
+body {
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/akan.jpeg") no-repeat center center/cover;
 }
-@media screen and (min-width: 768px) {
-.column{width: 220px; float: left; padding: 15px;}
-.images{width: 350px;}
-body {background-color: cornsilk;}
-.test-box {
-    border: 2px solid red;
-  }
-  .test-box {
-    border-left: 2px solid red;
-    border-right: 4px solid blue;
-    border-top: 6px solid orange;
-    border-bottom: 8px solid black;
-  }
+.ppp {
+  color:white;
+  font-family: 'EB Garamond', serif;
+  font-size:2.3em;
+  line-height: 1.1;
+}
+h1 {
+  font-family: 'Righteous', cursive;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-size:4.8em;
+  text-align:center;
+
+}
+.ttt {
+  color:white;
+  font-family: 'EB Garamond', serif;
+  font-size:1.8em;
+}
+.ggg {
+  color:aqua;
+  font-family: 'EB Garamond', serif;
+  font-size:1.8em;
+} 
+
+label {
+  font-size:1.5em;
+  color:aqua;
+}
+footer {
+  color:white;
+  font-size:1em;
+}
+form {
+  width:60%;
+  /*border:2px solid white;*/
+  text-align:center;
+}
+a {
+  color:white;
+}
+.btn btn-outline-info btn-lg {
+  color:white;
+}
+#output {
+  font-size:1.8em;
+  border:2px solid white;
+  text-shadow: 2px 2px 4px #000000;
+}

@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="css/bootsrap.css" rel="stylesheet" type="text/css" media="all">
-        <title>Akan Naming System</title>
-    </head>
-    <body>
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <div class>
-            <div class="container">
-                <h1>Akan Naming system</h1>
-                <img class="images" src="images/akan.jpeg"></image>
-                <div class="test box">This application helps determine the day aa person was born and then gives the person a ghanan name.
-                In ghana children are named according to the day they are born. Each gender and day has its own name for children.
-                This system helps uniquely identify children from different gender base and day of birth. It also helps peer mates find thier birth mates.</div>
-                <form class="myform" onsubmit="retun getAkanName()"></div>
-                    <lable for="year-of-birth">  
-                    year:
-                    <input id="year-input" type="number" name="yearOfBirth" placeholder="YYYY" value=""required>
-                    </lable>
-                    <lable for="month-of-birth">
-                    month:
-                    <input id="month-input" type="number" name="monthOfBirth" placeholder="MM" value=""required>
-                    </lable>
-                    <lable for="date-of-birth">
-                    date:
-                    <input id="date-input" type="number" name="dateOfBirth" placeholder="DD" value=""required>
-                    </lable>
-                <br><br>
-                    <label for="genders">
-                <p>Select your gender: </p>
-                    Male:
-                    <input id="male-input" type="radio" name="gender" value="male" required>
-                    Female:
-                    <input id="female-input" type="radio" name="gender" value="female" required>
-    
-                    </label>
-                <br><br>
-                    <input id="get-name" type="button" name="" value="Generate name">
-                <br><br>
-                </form>
-                    <script scr="js/scripts.js">
-            </div>   
+<html lang="en">
 
-                    <h4 id = "displayName"><strong>Your Akan name will be displayed below:</strong></h4>
-                    <p id="result"></p>
-            </div>        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akan Names</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Akan System Naming culture</h1>
+        <p class="ppp">The Akan naming system is a culture that was developed by the Ghananians. Children were given a
+            "day name"
+            which corresponds to the day in the week they were born. The tradition was shared out through-out west
+            Africa and the African Diaspora. Notable figures with Akan names include Ghana's first president Kwame
+            Nkrumah
+            and former United Nations Secretary-General Kofi Annan. </p>
+        <p class="ttt">Get to know your 'Akan Name' by simply filling out the form below.</p>
+
+        <form>
+            <div>
+                <div>
+                        <p id="output"></p>
+                    <label>Enter Your first Name.</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter" required>
+                    <label>Year</label>
+                    <input type="number" class="form-control" id="year" placeholder="Enter the year." required
+                        min="1980" max="2019" >
+                    <label>Month</label>
+                    <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                        max="12">
+
+                    <label>Day</label>
+                    <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                        max="31">
+                </div>
+                <div class="ggg">
+                    <label>Gender</label><br>
+                    <input type="radio" name="gender" id="male" value="male" checked> Male
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </div>
+            </div>
+            <button onclick="submission()" class="btn btn-outline-info btn-lg">Submit</button>
+    <br>        
+            <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
