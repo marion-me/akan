@@ -1,6 +1,6 @@
-const maleNames = ["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const femaleNames = ["Akosua", "Adwoa", "Abenea", "Akua", "Yaa", "Afua", "Ama"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var maleNames = ["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenea", "Akua", "Yaa", "Afua", "Ama"];
 
 function getNames() {
     var dayy = new Date();
