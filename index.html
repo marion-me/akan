@@ -1,57 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
     <title>Akan Names</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Akan System Naming culture</h1>
-        <p class="ppp">The Akan naming system is a culture that was developed by the Ghananians. Children were given a
-            "day name"
-            which corresponds to the day in the week they were born. The tradition was shared out through-out west
-            Africa and the African Diaspora. Notable figures with Akan names include Ghana's first president Kwame
-            Nkrumah
-            and former United Nations Secretary-General Kofi Annan. </p>
-        <p class="ttt">Get to know your 'Akan Name' by simply filling out the form below.</p>
+        <br>
+        <div class="jumbotron">
+            <h1><strong>Akan names</strong></h1>
+        </div>
+        <p><em>
+            The Akan naming system is a culture that was developed by the Ghananians. Children were given a "day name" which corresponds to the day in the week they were born. The tradition was shared out through-out west Africa and the African Diaspora. Notable figures with Akan names include Ghana's first president Kwame Nkrumah and former United Nations Secretary-General Kofi Annan.
+            </em>
+            <h2>Male</h2>
+            <p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-md-5">
+                            <ul>
 
-        <form>
-            <div>
-                <div>
-                        <p id="output"></p>
-                    <label>Enter Your first Name.</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter" required>
-                    <label>Year</label>
-                    <input type="number" class="form-control" id="year" placeholder="Enter the year." required
-                        min="1980" max="2019" >
-                    <label>Month</label>
-                    <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
-                        max="12">
 
-                    <label>Day</label>
-                    <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
-                        max="31">
-                </div>
-                <div class="ggg">
-                    <label>Gender</label><br>
-                    <input type="radio" name="gender" id="male" value="male" checked> Male
-                    <input type="radio" name="gender" id="female" value="female"> Female
-                </div>
+                                <li>Sunday: Kwasi</li>
+
+                                <li>Monday: Kwadwo</li>
+
+                                <li>Tuesday: Kwabena</li>
+
+                                <li>Wednesday: Kwaku</li>
+
+                                <li>Thursday: Yaw</li>
+
+                                <li>Friday: Kofi</li>
+
+                                <li>Saturday: Kwame</li>
+                            </ul>
+            </p>
+            <p>
+                <h3>Female</h3>
+                <li>Sunday: Akosua</li>
+
+                <li>Monday: Adwoa</li>
+
+                <li>Tuesday: Abenaa</li>
+
+                <li>Wednesday: Akua</li>
+
+                <li>Thursday: Yaa</li>
+
+                <li>Friday: Afua</li>
+
+                <li>Saturday: Ama</li>
+    </div>
+    </div>
+    </p>
+    </p>
+    <div id="form">
+        <form action="#" id="form">
+            <div class="form-group " onsubmit="event.getNames()">
+                <label for="Year">Year Of Birth</label>
+                <input type="text" class="form-control" id="year" placeholder="Enter the year">
             </div>
-            <button onclick="submission()" class="btn btn-outline-info btn-lg">Submit</button>
-    <br>        
-            <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
+            <div class="form-group">
+                <label for="Month">Month of birth</label>
+                <select class="form-control" id="month">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="form-group" id="form">
+                <label for="Date">Date Of Birth</label>
+                <select class="form-control" id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="radio" class="radio-inline">
+                        <input type="radio" value="male" name="gender" id="male" required />
+                        Male </label><br />
+                    <label for="radio" class="radio-inline">
+                        <input type="radio" value="female" name="gender" id="female" required />
+                        Female
+                    </label>
+                </div>
+                <button type="button" onclick="akanNames()" class="btn btn-outline-primary">submit</button>
+ 
+            </div>
+
         </form>
+
+        </p>
+
     </div>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

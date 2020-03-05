@@ -1,84 +1,52 @@
-var submission = function() {
-  var daysOfTheWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
-  var maleNames = [
-    "Kwasi",
-    "Kwadwo",
-    "Kwabena",
-    "Kwaku",
-    "Yaw",
-    "Kofi",
-    "Kwame"
-  ];
-  var femaleNames = [
-    "Akosua",
-     " Adwoa",
-    "Abenaa",
-    "Akua",
-    "Yaa",
-    "Afua",
-    "Ama"
-  ];
-  var month = parseInt(document.getElementById("month").value);
-  var year = parseInt(document.getElementById("year").value);
-  var day = parseInt(document.getElementById("day").value);
-  var name =(document.getElementById("name").value);
-  var date0fbirth = new Date(year + "/" + month + "/" + day);
-  var results = date0fbirth.getDay();
-  var output = document.getElementById("output");
-  var male = document.getElementById("male")
-  var female = document.getElementById("female")
-  
-  if (month =="" && year =="" && day =="" && name=="") {
-    alert("Please Enter you credentials");
-    return false;
-  }
+const maleNames = ["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const femaleNames = ["Akosua", "Adwoa", "Abenea", "Akua", "Yaa", "Afua", "Ama"];
 
-//   if (month == null || month== "", day == null || day == "", year== null || year == "", name == null || name == "") {
-//     alert("Please Fill All Required Field");
-//     return false;
-//   }
-// }
-  
-  
- if (year < 0) {
-    output.style.background ="red"
-    output.style.color= "white"
-    output.innerHTML = "Hey! " + name + " please enter a valid year! "
+function getNames() {
+    var dayy = new Date();
+    var year = parseInt(document.getElementById("year").value);
+    var month = parseInt(document.getElementById("month").value) - 1;
+    var date = parseInt(document.getElementById("day").value);
+    dayy.setDate(date);
+    dayy.setMonth(month);
+    dayy.setFullYear(year);
+    var day = dayy.getDay();
+    if (day <= 0 || day > 31) {
+        alert("Please enter a valid day");
+    } else if (month < 0 || month > 12 || month == 2 && day > 29) {
+        alert("Please enter a valid month");
+    } else {
+        return day;
+    }
 }
-  
-else if ((month < 1) || (month > 31)) {
-    output.style.background ="red"
-    output.style.color= "white"
-    output.innerHTML = "Hey! " + name + " please enter a valid month! "
+function weekday() {
+    if (getNames() === 0) {
+        return "Sunday";
+    } else if (getNames() === 1) {
+        return "Monday";
+    } else if (getNames() === 2) {
+        return "Tuesday";
+    } else if (getNames() === 3) {
+        return "Wednesday";
+    } else if (getNames() === 4) {
+        return "Thursday";
+    } else if (getNames() === 5) {
+        return "Friday";
+    } else if (getNames() === 6) {
+        return "Saturday";
+    }
 }
-  
- else if (day < 0 || day > 31) {
-    output.style.background ="red"
-    output.style.color= "white"
-    output.innerHTML = "Hey! " + name + " please enter a valid day! "
-}
-//  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
- 
-//  if(valid == false){
-//    alert("No Input received!!");
-//  }
 
-  if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-    output.style.background ="lime"
-      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
-  }
-   else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-    output.style.background ="lime"
-    output.style.background ="red"
-    output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
-    event.preventDefault();
-  };
-};
+function akanNames() {
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
+    var maleNames = ["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var femaleNames = ["Akosua", "Adwoa", "Abenea", "Akua", "Yaa", "Afua", "Ama"];
+    if (male.checked == true) {
+        alert("You were born on " + days[getNames()] + " and Your Akan name is " + maleNames[getNames()]);
+    }
+    else if (female.checked == true) {
+        alert("You were born on " + days[getNames()] + " and Your Akan name is " + femaleNames[getNames()])
+    }
+}
